@@ -1,0 +1,10 @@
+在herocharacter或basecharacter中创建asc
+asc中定义两个函数AbilityInputTagPressed和AbilityInputTagReleased
+AbilityInputTagPressed 定义一个局部变量遍历ActivatableAbilities.Items（giveability给予过的能力）如果spec**Spec.DynamicAbilityTags.HasTagExact(InputTag)**  TryActivateAbility(Spec.Handle);
+蓝图中就可以ActivateAbility后写逻辑 gas被激活
+
+主角绑定输入 回调函数里激活asc的AbilityInputTagPressed和AbilityInputTagReleased
+
+装备武器时：
+添加武器的输入映射 并 遍历武器的GrantedAbilities 定义Spec记录所有GrantedAbilities的信息（asc激活和获得gas需要spec而不是gas）
+spec添加inputtag **Spec.DynamicAbilityTags.AddTag(MyGameplayTags::Input_Fire);**  再将能力给与asc ** ASC->GiveAbility(Spec); **
