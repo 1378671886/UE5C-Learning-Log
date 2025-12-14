@@ -5,3 +5,5 @@ UFUNCTION(BlueprintPure)
 FGameplayEffectSpecHandle MakeHeroDamageEffectSpecHandle(TSubclassOf<UGameplayEffect>EffectClass,float InWeaponBaseDamage ,FGameplayTag InCurrentAttackTypeTag,int32 InCurrentComboCount);
 
 FActiveGameplayEffectHandle NativeApplyEffectSpecHandleToTarget(AActor* TargetActor,const FGameplayEffectSpecHandle& InSpecHandle);
+
+UGEExecClac_DamageTaken();
