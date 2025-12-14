@@ -2,4 +2,4 @@ ga_light/heavyattack->make gameplay effect spec handle（attack type/combo count
 ->gameplay effect execution calculation->attribute set->notify UI
 
 UFUNCTION(BlueprintPure)
-FGameplayEffectSpecHandle MakeHeroDamageEffectSpecHandle(TSubclassOf<UGameplayEffect>EffectClass,float InWeaponBaseDamage ,FGameplayTag InCurrentAttackTypeTag,int32 Level = 1);
+FGameplayEffectSpecHandle MakeHeroDamageEffectSpecHandle(TSubclassOf<UGameplayEffect>EffectClass,float InWeaponBaseDamage ,FGameplayTag InCurrentAttackTypeTag,int32 InCurrentComboCount);
