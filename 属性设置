@@ -1,0 +1,2 @@
+ga_light/heavyattack->make gameplay effect spec handle（attack type/combo count/base damage）->apply handle to target
+->gameplay effect execution calculation->attribute set->notify UI
