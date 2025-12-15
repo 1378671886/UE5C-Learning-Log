@@ -1,0 +1,2 @@
+attribute changed通过接口告知pawnUIcomponent
+pawnUIcomponent创建了一个动态多播委托 来broadcast 告知widgets
