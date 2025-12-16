@@ -1,3 +1,4 @@
 aicontroller aibehaviortree
 将aic的路径跟随组件换成人群跟随组件
 绑定成员函数	EnemyPerceptionComponent->OnTargetPerceptionUpdated.AddUniqueDynamic(this, &ThisClass::OnEnemyPerceptionUpdated);
+设置黑板键targetactor的值
