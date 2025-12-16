@@ -1,2 +1,2 @@
 aicontroller aibehaviortree
-将aic的寻路系统换成ucrowdfollowingcomponent
+将aic的路径跟随组件换成人群跟随组件
